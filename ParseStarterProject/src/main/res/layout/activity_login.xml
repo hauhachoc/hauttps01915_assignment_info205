@@ -1,0 +1,75 @@
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_supervisor_account_white_48dp"
+            android:tint="@android:color/black"/>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#5C0B1A"
+            android:text="ĐĂNG NHẬP" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/eduser"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Tài khoản"
+                android:ems="10" >
+                <requestFocus />
+            </EditText>
+            <EditText
+                android:id="@+id/edpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:singleLine="true"
+                android:hint="Mật Khẩu"
+                android:inputType="textPassword"
+                android:ems="10" />
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:alpha="155"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                android:text="Đăng nhập"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvTao"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textSize="20sp"
+                android:text="Tạo tài khoản" />
+        </LinearLayout>
+    </LinearLayout>
